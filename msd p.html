@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Medicine Reminder App</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4facfe, #43e97b);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      background: #fff;
+      color: #4facfe;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #4facfe;
+    }
+
+    /* Download Section */
+    .download {
+      text-align: center;
+      padding: 70px 20px;
+      background: #f1f8ff;
+    }
+
+    .download h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .download p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+    }
+
+    .download .cta-btn {
+      background: #4facfe;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header>
+    <h1>Smart Medicine Reminder App</h1>
+    <p>Never miss a dose again! Our AI-powered app helps elders and families track medicines with smart notifications & reminders.</p>
+    <a href="#download" class="cta-btn">Get Started</a>
+  </header>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" alt="Reminder Icon"/>
+      <h3>Smart Reminders</h3>
+      <p>Get notified at the right time to take your medicines without fail.</p>
+    </div>
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/3448/3448582.png" alt="Tracking Icon"/>
+      <h3>Medicine Tracking</h3>
+      <p>Keep track of prescriptions and refill schedules easily.</p>
+    </div>
+    <div class="feature">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Family Icon"/>
+      <h3>Family Alerts</h3>
+      <p>Notify family members if a dose is missed for extra safety.</p>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <h2>Download the App</h2>
+    <p>Available soon on Android & iOS. Stay connected, stay healthy.</p>
+    <a href="#" class="cta-btn">Download Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Smart Medicine Reminder. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Example: Smooth Scroll for CTA
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
